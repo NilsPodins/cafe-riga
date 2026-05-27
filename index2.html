@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rīgas Rīts — Kafejnīca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">Rīgas <span>Rīts</span></a>
+    <ul class="nav-links">
+      <li><a href="#par-mums">Par mums</a></li>
+      <li><a href="#izvēlne">Izvēlne</a></li>
+      <li><a href="#darba-laiks">Darba laiks</a></li>
+      <li><a href="#kontakti">Kontakti</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Izvēlne">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#par-mums" onclick="closeMobile()">Par mums</a>
+    <a href="#izvēlne" onclick="closeMobile()">Izvēlne</a>
+    <a href="#darba-laiks" onclick="closeMobile()">Darba laiks</a>
+    <a href="#kontakti" onclick="closeMobile()">Kontakti</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Kafejnīca · Rīgas centrs</p>
+      <h1>Labdien, <em>Rīga</em></h1>
+      <p>Silta vieta pilsētas ritmā — labs kafijas tase, mājīgs interjers un smarža, kas paliek atmiņā.</p>
+      <a href="#izvēlne" class="btn-primary">Skaties izvēlni</a>
+    </div>
+    <div class="hero-scroll">
+      <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- PAR MUMS -->
+  <section id="par-mums">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="section-label">Par mums</p>
+          <h2 class="section-title">Vairāk nekā tikai kafija</h2>
+          <p>Rīgas Rīts dzima no vienkāršas idejas — radīt vietu, kur diena var sākties lēnāk. Mēs atrodamies pilsētas
+            sirdī, un katrs apmeklētājs ir mūsu rīta daļa.</p>
+          <p>Mūsu baristās gatavo katru tasi ar uzmanību, izmantojot rūpīgi atlasītas grauzdētas kafijas pupiņas no
+            maziem fermeriem. Ēdienkartes pamatā — vietēji produkti un sezonāls ritms.</p>
+          <p class="signature">— Agnese & Mārtiņš, dibinātāji</p>
+        </div>
+        <div class="about-img reveal-right">
+          <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=900&auto=format&fit=crop&q=80"
+            alt="Kafejnīcas interjers" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IZVĒLNE -->
+  <section id="izvēlne">
+    <div class="container">
+      <p class="section-label reveal">Izvēlne</p>
+      <h2 class="section-title reveal">Ko mēs piedāvājam</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card reveal" style="transition-delay:.05s">
+          <img class="menu-card-img"
+            src="https://images.unsplash.com/photo-1485808191679-5f86510bd9d4?w=600&auto=format&fit=crop&q=75"
+            alt="Flat White" loading="lazy" />
+          <div class="menu-card-body">
+            <p class="menu-card-category">Kafija</p>
+            <p class="menu-card-name">Flat White</p>
+            <p class="menu-card-desc">Dubultais espresso ar maiga tvaicēta piena putām — ideāls rīta pavadonis.</p>
+            <p class="menu-card-price">3,20 €</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" style="transition-delay:.1s">
+          <img class="menu-card-img"
+            src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&auto=format&fit=crop&q=75"
+            alt="Matcha Latte" loading="lazy" />
+          <div class="menu-card-body">
+            <p class="menu-card-category">Kafija</p>
+            <p class="menu-card-name">Matcha Latte</p>
+            <p class="menu-card-desc">Japāņu matchas pulveris ar augu pienu un medu — zaļš un maigs.</p>
+            <p class="menu-card-price">3,80 €</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" style="transition-delay:.15s">
+          <img class="menu-card-img"
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format&fit=crop&q=75"
+            alt="Espresso" loading="lazy" />
+          <div class="menu-card-body">
+            <p class="menu-card-category">Kafija</p>
+            <p class="menu-card-name">Espresso</p>
+            <p class="menu-card-desc">Klasika bez kompromisiem — intensīvs, ar smalku rūgtumu un ilgstošu pēcgaršu.</p>
+            <p class="menu-card-price">2,20 €</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" style="transition-delay:.2s">
+          <img class="menu-card-img"
+            src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=75"
+            alt="Franču grauzdiņš" loading="lazy" />
+          <div class="menu-card-body">
+            <p class="menu-card-category">Brokastis</p>
+            <p class="menu-card-name">Franču grauzdiņš</p>
+            <p class="menu-card-desc">Mājas maize, olas, kanēlis, klava sīrups un svaigas ogas virspusē.</p>
+            <p class="menu-card-price">6,50 €</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" style="transition-delay:.25s">
+          <img class="menu-card-img"
+            src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&auto=format&fit=crop&q=75"
+            alt="Avokado tosts" loading="lazy" />
+          <div class="menu-card-body">
+            <p class="menu-card-category">Brokastis</p>
+            <p class="menu-card-name">Avokado tosts</p>
+            <p class="menu-card-desc">Svaigs avokado uz rudzu maizes ar pārplūstošu olu un čili pārslām.</p>
+            <p class="menu-card-price">7,20 €</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" style="transition-delay:.3s">
+          <img class="menu-card-img"
+            src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&auto=format&fit=crop&q=75"
+            alt="Mandeļu kroasāns" loading="lazy" />
+          <div class="menu-card-body">
+            <p class="menu-card-category">Ceptuve</p>
+            <p class="menu-card-name">Mandeļu kroasāns</p>
+            <p class="menu-card-desc">Sviesta mīkla, mandeļu krēms un cukurpulveris — svaiği cepti katru rītu.</p>
+            <p class="menu-card-price">3,50 €</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" style="transition-delay:.35s">
+          <img class="menu-card-img"
+            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&auto=format&fit=crop&q=75"
+            alt="Šokolādes kūka" loading="lazy" />
+          <div class="menu-card-body">
+            <p class="menu-card-category">Deserti</p>
+            <p class="menu-card-name">Šokolādes kūka</p>
+            <p class="menu-card-desc">Dziļi tumša šokolāde, mīksta iekšpusē, ar krējuma kausi malā.</p>
+            <p class="menu-card-price">4,80 €</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" style="transition-delay:.4s">
+          <img class="menu-card-img"
+            src="https://images.unsplash.com/photo-1638176066666-ffb2f013c7dd?w=600&auto=format&fit=crop&q=75"
+            alt="Rīta putras bļoda" loading="lazy" />
+          <div class="menu-card-body">
+            <p class="menu-card-category">Brokastis</p>
+            <p class="menu-card-name">Rīta putras bļoda</p>
+            <p class="menu-card-desc">Auzu putras bāze ar sezonāliem augļiem, riekstiem un chia sēklām.</p>
+            <p class="menu-card-price">5,90 €</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DARBA LAIKS -->
+  <section id="darba-laiks">
+    <div class="container">
+      <p class="section-label reveal">Atrodi mūs</p>
+      <h2 class="section-title reveal">Darba laiks & adrese</h2>
+      <div class="hours-grid">
+        <div class="reveal-left">
+          <ul class="hours-list">
+            <li><span class="day">Pirmdiena – Piektdiena</span><span class="time">7:30 – 20:00</span></li>
+            <li><span class="day">Sestdiena</span><span class="time">8:00 – 21:00</span></li>
+            <li><span class="day">Svētdiena</span><span class="time">9:00 – 18:00</span></li>
+          </ul>
+          <div class="info-block" style="margin-top:2rem">
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21c-4-4-7-8-7-12a7 7 0 0114 0c0 4-3 8-7 12z" />
+                  <circle cx="12" cy="9" r="2.5" />
+                </svg>
+              </div>
+              <p class="info-text">Tērbatas iela 15, Rīga, LV-1011</p>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <p class="info-text">+371 2234 5678</p>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="M2 7l10 7 10-7" />
+                </svg>
+              </div>
+              <p class="info-text">sveiki@rigasrits.lv</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.945!2d24.1162!3d56.9590!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd35b61a3ff%3A0x796552e72e43c9ef!2zVMSTcmJhdGFzIGllbGEsIFLEq2dhLCBMVi0xMDEx!5e0!3m2!1slv!2slv!4v1680000000"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Rīgas Rīts atrašanās vieta">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKTI -->
+  <section id="kontakti">
+    <div class="container">
+      <p class="section-label reveal">Saziņa</p>
+      <h2 class="section-title reveal">Raksti mums</h2>
+      <div class="contact-grid">
+        <div class="reveal-left">
+          <p>Ja tev ir jautājumi, vēlies rezervēt galdu grupai vai vienkārši gribies pateikt sveiku — mēs priecāsimies
+            dzirdēt.</p>
+          <p>Atbildam darba dienās 24 stundu laikā.</p>
+          <div class="contact-social">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Vārds</label>
+              <input type="text" id="name" placeholder="Tavs vārds" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-pasts</label>
+              <input type="email" id="email" placeholder="tavs@epasts.lv" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Ziņojums</label>
+              <textarea id="message" placeholder="Raksti šeit..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Sūtīt ziņu</button>
+            <div class="form-success" id="formSuccess">✓ Paldies! Mēs sazināsimies ar tevi drīzumā.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 <span>Rīgas Rīts</span>. Visi tiesības aizsargātas. Darīts ar ☕ Rīgā.</p>
+  </footer>
+
+  <script>
+    // NAV scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // BURGER menu
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    });
+    function closeMobile() {
+      burger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // SCROLL REVEAL
+    const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // CONTACT FORM
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('.btn-submit');
+      const success = document.getElementById('formSuccess');
+      btn.textContent = 'Nosūtīts...';
+      btn.disabled = true;
+      setTimeout(() => {
+        success.style.display = 'block';
+        e.target.reset();
+        btn.textContent = 'Sūtīt ziņu';
+        btn.disabled = false;
+      }, 900);
+    }
+  </script>
+</body>
+
+</html>
